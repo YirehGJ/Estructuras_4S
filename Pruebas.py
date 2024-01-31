@@ -4,4 +4,4 @@ def fact(n: int)->int:
 
     return n * fact(n - 1)
 n=int(input("Ingresa un numero: "))
-print(fact(5))
+print(fact(6))
