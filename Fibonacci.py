@@ -10,12 +10,13 @@ def fib(n):#Definicion de la funcion Fibonacci de forma recursiva
     calcular, despues de que tiene los 2 numeros realiza una suma y el producto de esta suma es la
     que se convertira en el numero en la posicion n.
     '''
-    if n > 2:#
+    if n > 1:#
         return fib(n - 1) + fib(n - 2)
     return n
 
 x = int(input("Ingresa un numero: "))#Se le solicita al usuario ingresar un numero que sera la posicion hasta donde llegara la funcion
 #El for es una comprension de lista, que funciona solo despues de haber pasado por un if
 #Las listas comprensivas forsozamente deben de pasar por un if para que se pueda en listar
-t=[fib(i) for i in range(x)]#Genera una lista del tamaño proporcionado con los terminos de Fibonacci
-print(t)#Imprime la lista que contiene los digitos de Fibonacci
+
+r=[fib(i) for i in range(x)]#Genera una lista del tamaño proporcionado con los terminos de Fibonacci
+print(r)#Imprime la lista que contiene los digitos de Fibonacci
