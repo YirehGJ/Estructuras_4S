@@ -25,6 +25,9 @@ class LinkedList:
         self.tail.next = Nodo(val)
         self.tail = self.tail.next
         self.counter += 1
+
+        '''Prueba para los commit'''
+        self.counter
     
     def headRemove(self) -> None:
         ''' Remover el elemento al inicio de la lista '''
